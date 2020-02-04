@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		04C84B0686982BF2F1570DBD /* Pods_wiki_appTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E846B5A1510D618C22943FF /* Pods_wiki_appTests.framework */; };
 		701538A023E99F9E003D2A5C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7015389F23E99F9E003D2A5C /* AppDelegate.swift */; };
-		701538A223E99F9E003D2A5C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701538A123E99F9E003D2A5C /* ViewController.swift */; };
 		701538A523E99F9E003D2A5C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 701538A323E99F9E003D2A5C /* Main.storyboard */; };
 		701538AA23E99FA0003D2A5C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 701538A823E99FA0003D2A5C /* LaunchScreen.storyboard */; };
 		701538B523E99FA0003D2A5C /* wiki_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701538B423E99FA0003D2A5C /* wiki_appTests.swift */; };
@@ -49,7 +48,6 @@
 		68F7CA716EB14C32DEAEC055 /* Pods_wiki_app_wiki_appUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_wiki_app_wiki_appUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7015389C23E99F9E003D2A5C /* wiki-app-dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "wiki-app-dev.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7015389F23E99F9E003D2A5C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		701538A123E99F9E003D2A5C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		701538A423E99F9E003D2A5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		701538A923E99FA0003D2A5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		701538AB23E99FA0003D2A5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -155,7 +153,6 @@
 				701538D123E9A44F003D2A5C /* Assets.xcassets */,
 				701538D623E9A80A003D2A5C /* env-configs */,
 				7015389F23E99F9E003D2A5C /* AppDelegate.swift */,
-				701538A123E99F9E003D2A5C /* ViewController.swift */,
 				701538D723E9C27F003D2A5C /* CustomTableViewCell.swift */,
 				701538A323E99F9E003D2A5C /* Main.storyboard */,
 				701538A823E99FA0003D2A5C /* LaunchScreen.storyboard */,
@@ -436,7 +433,6 @@
 				701538DA23E9C6B9003D2A5C /* SearchResultsTableViewController.swift in Sources */,
 				701538D823E9C27F003D2A5C /* CustomTableViewCell.swift in Sources */,
 				701538DC23E9C784003D2A5C /* APIRequestFetcher.swift in Sources */,
-				701538A223E99F9E003D2A5C /* ViewController.swift in Sources */,
 				701538A023E99F9E003D2A5C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -622,7 +618,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "$(WIKI_APP_BUNDLE_ID)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.aravindakr95.wiki-app.dev";
 				PRODUCT_NAME = "$(TARGET_NAME)-dev";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -641,7 +637,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "$(WIKI_APP_BUNDLE_ID)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.aravindakr95.wiki-app.dev";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -804,7 +800,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "$(WIKI_APP_BUNDLE_ID)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.aravindakr95.wiki-app.dev";
 				PRODUCT_NAME = "$(TARGET_NAME)-qa";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;

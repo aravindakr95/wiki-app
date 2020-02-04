@@ -26,6 +26,8 @@ final class SearchResultsTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        title = "Wikipedia API"
         tableView.tableFooterView = UIView()
         setupTableViewBackgroundView()
         setupSearchBar()
@@ -85,7 +87,6 @@ final class SearchResultsTableViewController: UITableViewController {
         present(safariVC, animated: true, completion: nil)
         tableView.deselectRow(at: indexPath, animated: true)
     }
-    
 }
 
 extension SearchResultsTableViewController: UISearchBarDelegate {
@@ -103,7 +104,6 @@ extension SearchResultsTableViewController: UISearchBarDelegate {
     }
     
     func fetchResults(for text: String) {
-        print("Text Searched: \(text)")
         apiFetcher.search(searchText: text, completionHandler: {
             [weak self] results, error in
             if case .failure = error {
@@ -121,5 +121,4 @@ extension SearchResultsTableViewController: UISearchBarDelegate {
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
         searchResults.removeAll()
     }
-    
 }
