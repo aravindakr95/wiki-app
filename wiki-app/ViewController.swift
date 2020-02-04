@@ -12,7 +12,12 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        var nsDictionary: NSDictionary?
+        if let path = Bundle.main.path(forResource: "Info", ofType: "plist") {
+            nsDictionary = NSDictionary(contentsOfFile: path)
+            print(nsDictionary!["APPLICATION_NAME"] as? String ?? "default")
+        }
     }
 
 
