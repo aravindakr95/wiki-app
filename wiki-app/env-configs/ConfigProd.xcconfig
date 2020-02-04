@@ -15,5 +15,5 @@ WIKI_APPLICATION_NAME=Prod
 WIKI_APP_NAME = WikiApp
 WIKI_APP_VERSION = 1.0
 WIKI_APP_BUNDLE_ID = com.aravindakr95.wiki-app
-WIKI_APP_ICON = AppIconProd
+WIKI_APP_ICON = AppIcon
 

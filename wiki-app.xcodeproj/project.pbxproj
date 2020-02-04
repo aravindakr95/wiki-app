@@ -129,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				7015389E23E99F9E003D2A5C /* wiki-app */,
+				701538D123E9A44F003D2A5C /* Assets.xcassets */,
 				701538B323E99FA0003D2A5C /* wiki-appTests */,
 				701538BE23E99FA0003D2A5C /* wiki-appUITests */,
 				7015389D23E99F9E003D2A5C /* Products */,
@@ -150,15 +151,10 @@
 		7015389E23E99F9E003D2A5C /* wiki-app */ = {
 			isa = PBXGroup;
 			children = (
-				701538D123E9A44F003D2A5C /* Assets.xcassets */,
 				701538D623E9A80A003D2A5C /* env-configs */,
-				7015389F23E99F9E003D2A5C /* AppDelegate.swift */,
-				701538D723E9C27F003D2A5C /* CustomTableViewCell.swift */,
-				701538A323E99F9E003D2A5C /* Main.storyboard */,
-				701538A823E99FA0003D2A5C /* LaunchScreen.storyboard */,
+				705919C723E9FEC700FD3107 /* controllers */,
+				705919C823E9FED400FD3107 /* views */,
 				701538AB23E99FA0003D2A5C /* Info.plist */,
-				701538D923E9C6B9003D2A5C /* SearchResultsTableViewController.swift */,
-				701538DB23E9C784003D2A5C /* APIRequestFetcher.swift */,
 			);
 			path = "wiki-app";
 			sourceTree = "<group>";
@@ -189,6 +185,26 @@
 				701538D523E9A5EC003D2A5C /* ConfigProd.xcconfig */,
 			);
 			path = "env-configs";
+			sourceTree = "<group>";
+		};
+		705919C723E9FEC700FD3107 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7015389F23E99F9E003D2A5C /* AppDelegate.swift */,
+				701538D723E9C27F003D2A5C /* CustomTableViewCell.swift */,
+				701538D923E9C6B9003D2A5C /* SearchResultsTableViewController.swift */,
+				701538DB23E9C784003D2A5C /* APIRequestFetcher.swift */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		705919C823E9FED400FD3107 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				701538A323E99F9E003D2A5C /* Main.storyboard */,
+				701538A823E99FA0003D2A5C /* LaunchScreen.storyboard */,
+			);
+			path = views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
