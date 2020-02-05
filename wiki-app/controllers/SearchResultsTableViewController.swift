@@ -12,7 +12,6 @@ import Alamofire
 import SafariServices
 
 final class SearchResultsTableViewController: UITableViewController {
-    
     private var searchResults = [JSON]() {
         didSet {
             tableView.reloadData()
@@ -37,7 +36,7 @@ final class SearchResultsTableViewController: UITableViewController {
         let backgroundViewLabel = UILabel(frame: .zero)
         backgroundViewLabel.textColor = .darkGray
         backgroundViewLabel.numberOfLines = 0
-        backgroundViewLabel.text = " Oops, No results to show "
+        backgroundViewLabel.text = " Oops!, No results to show."
         backgroundViewLabel.textAlignment = NSTextAlignment.center
         backgroundViewLabel.font.withSize(20)
         tableView.backgroundView = backgroundViewLabel
@@ -69,8 +68,12 @@ final class SearchResultsTableViewController: UITableViewController {
         cell.descriptionLabel.text = searchResults[indexPath.row]["terms"]["description"][0].string
         
         if let url = searchResults[indexPath.row]["thumbnail"]["source"].string {
+            cell.wikiImageView.showLoading()
+            
             apiFetcher.fetchImage(url: url, completionHandler: { image, _ in
                 cell.wikiImageView.image = image
+                
+                cell.wikiImageView.hideLoading()
             })
         }
         

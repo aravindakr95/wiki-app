@@ -8,12 +8,10 @@
 
 import UIKit
 
-class CustomTableViewCell: UITableViewCell {
-    
-    @IBOutlet weak var wikiImageView: UIImageView!
+class CustomTableViewCell: UITableViewCell {    
+    @IBOutlet weak var wikiImageView: WikiImageView!
     
     @IBOutlet weak var titleLabel: UILabel!
-    
     @IBOutlet weak var descriptionLabel: UILabel!
     
     override func awakeFromNib() {

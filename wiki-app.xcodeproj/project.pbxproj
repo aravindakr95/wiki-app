@@ -17,6 +17,7 @@
 		701538D823E9C27F003D2A5C /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701538D723E9C27F003D2A5C /* CustomTableViewCell.swift */; };
 		701538DA23E9C6B9003D2A5C /* SearchResultsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701538D923E9C6B9003D2A5C /* SearchResultsTableViewController.swift */; };
 		701538DC23E9C784003D2A5C /* APIRequestFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701538DB23E9C784003D2A5C /* APIRequestFetcher.swift */; };
+		702FA4C123EA6C36002D33E7 /* WikiImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702FA4C023EA6C36002D33E7 /* WikiImageView.swift */; };
 		D0D3602CAAC8FDB627D862D7 /* Pods_wiki_app_wiki_appUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68F7CA716EB14C32DEAEC055 /* Pods_wiki_app_wiki_appUITests.framework */; };
 		F6B1E21533269E37DF9BEEB7 /* Pods_wiki_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 657F43AB75D006E98C7B1251 /* Pods_wiki_app.framework */; };
 /* End PBXBuildFile section */
@@ -64,6 +65,7 @@
 		701538D723E9C27F003D2A5C /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		701538D923E9C6B9003D2A5C /* SearchResultsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsTableViewController.swift; sourceTree = "<group>"; };
 		701538DB23E9C784003D2A5C /* APIRequestFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequestFetcher.swift; sourceTree = "<group>"; };
+		702FA4C023EA6C36002D33E7 /* WikiImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiImageView.swift; sourceTree = "<group>"; };
 		886DCDEEA46FDB6DF4FB01D0 /* Pods-wiki-app-wiki-appUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wiki-app-wiki-appUITests.debug.xcconfig"; path = "Target Support Files/Pods-wiki-app-wiki-appUITests/Pods-wiki-app-wiki-appUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		96AFA36CEC2E4ADBCA215C65 /* Pods-wiki-appTests.qa.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wiki-appTests.qa.xcconfig"; path = "Target Support Files/Pods-wiki-appTests/Pods-wiki-appTests.qa.xcconfig"; sourceTree = "<group>"; };
 		96BD2B2B7BB81A63FE874A22 /* Pods-wiki-appTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wiki-appTests.debug.xcconfig"; path = "Target Support Files/Pods-wiki-appTests/Pods-wiki-appTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				701538D623E9A80A003D2A5C /* env-configs */,
+				702FA4BE23EA6841002D33E7 /* extensions */,
 				705919C723E9FEC700FD3107 /* controllers */,
 				705919C823E9FED400FD3107 /* views */,
 				701538AB23E99FA0003D2A5C /* Info.plist */,
@@ -187,6 +190,21 @@
 			path = "env-configs";
 			sourceTree = "<group>";
 		};
+		702FA4BE23EA6841002D33E7 /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = extensions;
+			sourceTree = "<group>";
+		};
+		702FA4C223EA71E6002D33E7 /* custom-views */ = {
+			isa = PBXGroup;
+			children = (
+				702FA4C023EA6C36002D33E7 /* WikiImageView.swift */,
+			);
+			path = "custom-views";
+			sourceTree = "<group>";
+		};
 		705919C723E9FEC700FD3107 /* controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -203,6 +221,7 @@
 			children = (
 				701538A323E99F9E003D2A5C /* Main.storyboard */,
 				701538A823E99FA0003D2A5C /* LaunchScreen.storyboard */,
+				702FA4C223EA71E6002D33E7 /* custom-views */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -446,6 +465,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				702FA4C123EA6C36002D33E7 /* WikiImageView.swift in Sources */,
 				701538DA23E9C6B9003D2A5C /* SearchResultsTableViewController.swift in Sources */,
 				701538D823E9C27F003D2A5C /* CustomTableViewCell.swift in Sources */,
 				701538DC23E9C784003D2A5C /* APIRequestFetcher.swift in Sources */,
@@ -628,7 +648,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "$(WIKI_APP_ICON)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = F27WR2NMVN;
 				INFOPLIST_FILE = "wiki-app/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -647,7 +667,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "$(WIKI_APP_ICON)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = F27WR2NMVN;
 				INFOPLIST_FILE = "wiki-app/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -810,7 +830,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "$(WIKI_APP_ICON)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = F27WR2NMVN;
 				INFOPLIST_FILE = "wiki-app/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
