@@ -10,7 +10,7 @@ import Foundation
 import SwiftyJSON
 import Alamofire
 
-class APIRequestFetcher {
+final class APIRequestFetcher {
     var searchResults = [JSON]()
     
     func search(searchText: String, completionHandler: @escaping ([JSON]?, NetworkErrorType) -> ()) {
