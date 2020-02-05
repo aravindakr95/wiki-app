@@ -9,7 +9,6 @@
 import UIKit
 
 class WikiImageView: UIImageView {
-    private var originalButtonText: String?
     private var activityIndicator: UIActivityIndicatorView!
     
     private func createActivityIndicator() -> UIActivityIndicatorView {
