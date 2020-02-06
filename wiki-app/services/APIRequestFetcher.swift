@@ -13,7 +13,7 @@ import Alamofire
 final class APIRequestFetcher {
     var searchResults = [JSON]()
     
-    func search(searchText: String, completionHandler: @escaping ([JSON]?, NetworkErrorType) -> ()) {
+    func search(searchText: String, completionHandler: @escaping ([JSON]?, NetworkStatus) -> ()) {
         let urlToSearch = "https://en.wikipedia.org//w/api.php?action=query&format=json&prop=pageimages%7Cpageterms&generator=prefixsearch&redirects=1&formatversion=2&piprop=thumbnail&pithumbsize=150&pilimit=10&wbptterms=description&gpssearch=\(searchText)&gpslimit=10"
         
         Alamofire.request(urlToSearch).responseJSON { response in
@@ -33,7 +33,7 @@ final class APIRequestFetcher {
         }
     }
     
-    func fetchImage(url: String, completionHandler: @escaping (UIImage?, NetworkErrorType) -> ()) {
+    func fetchImage(url: String, completionHandler: @escaping (UIImage?, NetworkStatus) -> ()) {
         Alamofire.request(url).responseData { responseData in
             
             guard let imageData = responseData.data else {

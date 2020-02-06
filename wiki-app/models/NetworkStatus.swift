@@ -1,5 +1,5 @@
 //
-//  NetworkErrorType.swift
+//  NetworkStatus.swift
 //  wiki-app
 //
 //  Created by Aravinda Rathnayake on 2/5/20.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-public enum NetworkErrorType: Error {
+public enum NetworkStatus: Error {
     case failure
     case success
 }
